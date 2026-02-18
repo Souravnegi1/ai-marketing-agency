@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard — AI Agency</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="dashboard">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html"><span class="logo-dot"></span> AI Agency</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="creators.html">Creators</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+        <a id="logout-btn" href="#">Logout</a>
+      </div>
+    </div>
+  </nav>
+  <section class="container hero">
+    <div class="pill">Client Dashboard</div>
+    <h1>Current campaign analysis</h1>
+    <p>Live performance metrics, top campaigns, and trends.</p>
+  </section>
+  <section class="container section">
+    <div class="stats">
+      <div class="stat"><div class="v" id="metric-revenue"></div><div class="k">Monthly Revenue</div></div>
+      <div class="stat"><div class="v" id="metric-leads"></div><div class="k">Leads</div></div>
+      <div class="stat"><div class="v" id="metric-conversions"></div><div class="k">Conversions</div></div>
+      <div class="stat"><div class="v" id="metric-ctr"></div><div class="k">CTR</div></div>
+    </div>
+  </section>
+  <section class="container section">
+    <div class="row">
+      <div class="card">
+        <h3>Revenue trend</h3>
+        <div id="spark-revenue"></div>
+      </div>
+      <div class="card">
+        <h3>Cost per acquisition</h3>
+        <div class="v" id="metric-cpa"></div>
+      </div>
+    </div>
+  </section>
+  <section class="container section">
+    <table class="table">
+      <thead><tr><th>Campaign</th><th>Spend</th><th>Clicks</th><th>Conversions</th><th>Rate</th></tr></thead>
+      <tbody id="campaign-rows"></tbody>
+    </table>
+  </section>
+  <footer class="footer">© 2026 AI Agency</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

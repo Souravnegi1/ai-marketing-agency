@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking — AI Agency</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="booking">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html"><span class="logo-dot"></span> AI Agency</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="creators.html">Creators</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+  </nav>
+  <section class="container hero">
+    <div class="pill">Book a call</div>
+    <h1>Strategy call to map automation opportunities</h1>
+    <p>Share your goals, stack, and funnel. We prepare a proposal with timelines, KPIs, and pricing.</p>
+  </section>
+  <section class="container section">
+    <div id="booking-notice" class="notice" style="margin-bottom:12px"></div>
+    <form id="booking-form" class="form">
+      <div class="field"><label>Name</label><input name="name" required></div>
+      <div class="field"><label>Email</label><input type="email" name="email" required></div>
+      <div class="field"><label>Company</label><input name="company"></div>
+      <div class="field"><label>Website</label><input name="website"></div>
+      <div class="field"><label>Phone</label><input name="phone"></div>
+      <div class="field"><label>Service</label>
+        <select name="service" required>
+          <option value="Sales Agents">Sales Agents</option>
+          <option value="Support Agents">Support Agents</option>
+          <option value="Workflow Automation">Workflow Automation</option>
+          <option value="Onboarding">Onboarding</option>
+          <option value="Analytics">Analytics</option>
+          <option value="Creator Growth">Creator Growth</option>
+        </select>
+      </div>
+      <div class="field"><label>Budget</label>
+        <select name="budget">
+          <option value="<$5k"><$5k</option>
+          <option value="$5k-$15k">$5k-$15k</option>
+          <option value=">$15k">>$15k</option>
+        </select>
+      </div>
+      <div class="field" style="grid-column:1/-1"><label>Notes</label><textarea name="notes"></textarea></div>
+      <div class="field"><label>Preferred Date</label><input type="date" name="slot"></div>
+      <div class="field actions"><button class="cta" type="submit">Request Booking</button></div>
+    </form>
+  </section>
+  <footer class="footer">© 2026 AI Agency</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
